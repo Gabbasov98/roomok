@@ -1,0 +1,828 @@
+<!DOCTYPE html> <html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Каталог</title>
+</head>
+
+
+<body class="page">
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+    <div class="header__inner">
+        <a href="index.html" class="header__logo logo">
+            <img src="img/logo.svg" alt="">
+        </a>
+
+        <nav class="nav">
+            <div class="nav__item">
+                <div class="nav__show">
+                    <a href="about.html">О нас</a>
+                </div>
+                <div class="nav__hidden">
+                    <div class="nav__hidden-inner m-dropdown">
+                        <a href="" class="nav__sublink">Наши сотрудники</a>
+                        <a href="vacancies.html" class="nav__sublink">Вакансии</a>
+                    </div>
+                </div>
+            </div>
+            <a href="catalog.html" class="nav__item">Каталог</a>
+            <a href="cooperate.html" class="nav__item">Сотрудничество</a>
+            <a href="edu.html" class="nav__item">Обучение</a>
+        </nav>
+
+        <div class="header__right">
+            <div class="header__lang">
+                Ru
+            </div>
+            <a href="" class="header__notification">
+                <img src="img/notification.svg" alt="">
+            </a>
+            
+            <a href="" class="header__btn m-btn m-btn-primary">
+                Регистрация
+            </a>
+            
+            
+        </div>
+    </div>
+</div>
+
+        </header>
+        <main class="content">
+
+            <section class="catalog">
+                <div class="container">
+                    <h1 class="catalog__title display1">
+                        Выберите уникальное жилье
+                    </h1>
+                    <p class="catalog__desc body-text gray-text3">
+                        У нас есть всё: от замков и вилл до плавучих отелей и иглу
+                    </p>
+                    <div class="catalog__form">
+                        <form class="main__form">
+                            <fieldset class="form-group">
+    <input id="comeTopApart" type="date" data-placeholder="" required="" aria-required="true">
+    <label>Заезд</label>
+</fieldset>
+<fieldset class="form-group">
+    <input id="leaveFromApart" type="date" data-placeholder="" required="" aria-required="true">
+    <label>Отьезд</label>
+</fieldset>
+<fieldset class="form-group main__full">
+    <select id="personInRoom">
+        <option selected hidden></option>
+        <option>1 гостя</option>
+        <option>2 гостей</option>
+        <option>3 гостей</option>
+    </select>
+    <label>1 номер для</label>
+</fieldset>
+<button class="main__btn m-btn m-btn-secondary">Найти</button>
+
+                        </form>
+                        <div class="catalog__type">
+                            <div class="catalog__radios">
+                            <div class="catalog__radios-wrap">
+                                <div class="catalog__radio">
+                                    <input type="radio" name="type">
+                                    <label>Квартиры</label>
+                                </div>
+                                <div class="catalog__radio">
+                                    <input type="radio" name="type">
+                                    <label>Виллы</label>
+                                </div>
+                                <div class="catalog__radio">
+                                    <input type="radio" name="type">
+                                    <label>Котеджи</label>
+                                </div>
+                                <div class="catalog__radio">
+                                    <input type="radio" name="type">
+                                    <label>Апарт-отели</label>
+                                </div>
+                                <div class="catalog__radio">
+                                    <input type="radio" name="type">
+                                    <label>Отели</label>
+                                </div>
+                                <div class="catalog__radio">
+                                    <input type="radio" name="type">
+                                    <label>Все</label>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="catalog__detail">
+                            <div class="catalog__filter">
+                                <div class="catalog__filter-col">
+                                        <fieldset class="form-group">
+                                            <select>
+                                                <option selected hidden></option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                            <label>Количество комнат</label>
+                                        </fieldset>
+                                        <fieldset class="form-group">
+                                            <select>
+                                                <option selected hidden></option>
+                                                <option>Район 1</option>
+                                                <option>Район 2</option>
+                                                <option>Район 3</option>
+                                            </select>
+                                            <label>Район</label>
+                                        </fieldset>
+                                    </div>
+                                <div class="catalog__filter-col">
+                                        <fieldset class="form-group">
+                                            <select>
+                                                <option selected hidden></option>
+                                                <option>100</option>
+                                                <option>200</option>
+                                                <option>300</option>
+                                            </select>
+                                            <label>Общая площадь</label>
+                                        </fieldset>
+                                        <fieldset class="form-group">
+                                            <select>
+                                                <option selected hidden></option>
+                                                <option>Есть</option>
+                                                <option>Нет</option>
+                                            </select>
+                                            <label>Отопление</label>
+                                        </fieldset>
+                                    </div>
+                                <div class="catalog__filter-col">
+                                        <fieldset class="form-group">
+                                            <select>
+                                                <option selected hidden></option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                            <label>Этаж</label>
+                                        </fieldset>
+                                        <fieldset class="form-group">
+                                            <select>
+                                                <option selected hidden></option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                            <label>Спалень</label>
+                                        </fieldset>
+                                    </div>
+                                <div class="catalog__filter-col">
+                                    <button class="catalog__filter-btn m-btn m-btn-primary">
+                                        Подобрать
+                                    </button>
+                                    <button class="catalog__filter-btn m-btn m-btn-gray">
+                                        Сбросить
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="search-detail">
+                            <div class="search-detail__show">
+                                <button type="button" class="search-detail__toggle">
+                                    <span>Детали поиска</span>
+                                    <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 1.00001L7 7L1.00001 1.00001" stroke="#2D77E8" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="search-detail__hidden">
+                                <div class="search-detail__checks">
+                                    <div class="search-detail__check m-check">
+                                        <input type="checkbox">
+                                        <label>Парковка</label>
+                                    </div>
+                                    <div class="search-detail__check m-check">
+                                        <input type="checkbox">
+                                        <label>Интернет</label>
+                                    </div>
+                                    <div class="search-detail__check m-check">
+                                        <input type="checkbox">
+                                        <label>Камин</label>
+                                    </div>
+                                    <div class="search-detail__check m-check">
+                                        <input type="checkbox">
+                                        <label>Мебель</label>
+                                    </div>
+                                    <div class="search-detail__check m-check">
+                                        <input type="checkbox">
+                                        <label>Пассажирский лифт</label>
+                                    </div>
+                                    <div class="search-detail__check m-check">
+                                        <input type="checkbox">
+                                        <label>Телефон</label>
+                                    </div>
+                                    <div class="search-detail__check m-check">
+                                        <input type="checkbox">
+                                        <label>Телевизор</label>
+                                    </div>
+                                    <div class="search-detail__check m-check">
+                                        <input type="checkbox">
+                                        <label>Кондиционер</label>
+                                    </div>
+                                    <div class="search-detail__check m-check">
+                                        <input type="checkbox">
+                                        <label>Балкон</label>
+                                    </div>
+                                    <div class="search-detail__check m-check">
+                                        <input type="checkbox">
+                                        <label>Телевизор</label>
+                                    </div>
+                                    <div class="search-detail__check m-check">
+                                        <input type="checkbox">
+                                        <label>Кабельное</label>
+                                    </div>
+                                    <div class="search-detail__check m-check">
+                                        <input type="checkbox">
+                                        <label>Утюг</label>
+                                    </div>
+                                    <div class="search-detail__check m-check">
+                                        <input type="checkbox">
+                                        <label>Холодильник</label>
+                                    </div>
+                                    <div class="search-detail__check m-check">
+                                        <input type="checkbox">
+                                        <label>Микроволновка</label>
+                                    </div>
+                                    <div class="search-detail__check m-check">
+                                        <input type="checkbox">
+                                        <label>Романтика</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog__content">
+                        <fieldset class="catalog__sort sort-select">
+                            <select>
+                                <option selected>Сортировать:  Наши рекомендации</option>
+                                <option>Сортировать:  Наши рекомендации2</option>
+                                <option>Сортировать:  Наши рекомендации3</option>
+                            </select>
+                        </fieldset>
+                        <div class="catalog__items">
+                            <div class="apart__grid">
+                                <div class="apart-card">
+    <div class="apart-card__top">
+        <div class="apart-card__img">
+            <img src="img/apart.webp" alt="" >
+        </div>
+        
+        <button class="apart-card__favourite">
+
+        </button>
+    </div>
+
+    <div class="apart-card__content">
+        <a href="catalog-item.html" class="apart-card__title">
+            2-к квартира, 90 кв.м.,
+            улица Заморёнова
+        </a>
+        <div class="apart-card__city body-text2 gray-text">Анапа</div>
+
+        <div class="apart-card__hidden">
+            <div class="apart-card__rating body-text2 gray-text">
+                <img src="img/star.svg" alt="">
+                <span>4.9 (178)</span>
+            </div>
+            <div class="apart-card__props">
+            <div class="apart-card__prop body-text2">
+                <span class="apart-card__prop-title gray-text">Общая площадь</span>
+                <span class="apart-card__prop-desc">90 м2</span>
+            </div>
+            <div class="apart-card__prop body-text2">
+                <span class="apart-card__prop-title gray-text">Количество комнат</span>
+                <span class="apart-card__prop-desc">2 шт.</span>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="apart-card__bottom">
+        <div class="apart-card__convinients">
+            <img src="img/convinient.svg" alt="">
+            <img src="img/convinient2.svg" alt="">
+            <img src="img/convinient3.svg" alt="">
+            <img src="img/convinient4.svg" alt="">
+            <img src="img/convinient5.svg" alt="">
+            <img src="img/convinient6.svg" alt="">
+        </div>
+        <div class="apart-card__nav">
+            <div class="apart-card__price display4">
+                3 750 Р
+            </div>
+            <button class="apart-card__toggle">
+                <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 1.00004L8.92896 8.07111L1.85789 1.00004" stroke="#AEBED6" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+                                <div class="apart-card">
+    <div class="apart-card__top">
+        <div class="apart-card__img">
+            <img src="img/apart2.webp" alt="" >
+        </div>
+        
+        <div class="apart-card__badges">
+            <span class="apart-card__badge ">
+                Супер хозяин
+            </span>
+        </div>
+        
+        <button class="apart-card__favourite">
+
+        </button>
+    </div>
+
+    <div class="apart-card__content">
+        <a href="catalog-item.html" class="apart-card__title">
+            2-к квартира, 90 кв.м.,
+            улица Заморёнова
+        </a>
+        <div class="apart-card__city body-text2 gray-text">Анапа</div>
+
+        <div class="apart-card__hidden">
+            <div class="apart-card__rating body-text2 gray-text">
+                <img src="img/star.svg" alt="">
+                <span>4.9 (178)</span>
+            </div>
+            <div class="apart-card__props">
+            <div class="apart-card__prop body-text2">
+                <span class="apart-card__prop-title gray-text">Общая площадь</span>
+                <span class="apart-card__prop-desc">90 м2</span>
+            </div>
+            <div class="apart-card__prop body-text2">
+                <span class="apart-card__prop-title gray-text">Количество комнат</span>
+                <span class="apart-card__prop-desc">2 шт.</span>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="apart-card__bottom">
+        <div class="apart-card__convinients">
+            <img src="img/convinient.svg" alt="">
+            <img src="img/convinient2.svg" alt="">
+            <img src="img/convinient3.svg" alt="">
+            <img src="img/convinient4.svg" alt="">
+            <img src="img/convinient5.svg" alt="">
+            <img src="img/convinient6.svg" alt="">
+        </div>
+        <div class="apart-card__nav">
+            <div class="apart-card__price display4">
+                3 750 Р
+            </div>
+            <button class="apart-card__toggle">
+                <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 1.00004L8.92896 8.07111L1.85789 1.00004" stroke="#AEBED6" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+                                <div class="apart-card">
+    <div class="apart-card__top">
+        <div class="apart-card__img">
+            <img src="img/apart3.webp" alt="" >
+        </div>
+        
+        <div class="apart-card__badges">
+            <span class="apart-card__badge badge-purple">
+                Популярный
+            </span>
+        </div>
+        
+        <button class="apart-card__favourite">
+
+        </button>
+    </div>
+
+    <div class="apart-card__content">
+        <a href="catalog-item.html" class="apart-card__title">
+            2-к квартира, 90 кв.м.,
+            улица Заморёнова
+        </a>
+        <div class="apart-card__city body-text2 gray-text">Анапа</div>
+
+        <div class="apart-card__hidden">
+            <div class="apart-card__rating body-text2 gray-text">
+                <img src="img/star.svg" alt="">
+                <span>4.9 (178)</span>
+            </div>
+            <div class="apart-card__props">
+            <div class="apart-card__prop body-text2">
+                <span class="apart-card__prop-title gray-text">Общая площадь</span>
+                <span class="apart-card__prop-desc">90 м2</span>
+            </div>
+            <div class="apart-card__prop body-text2">
+                <span class="apart-card__prop-title gray-text">Количество комнат</span>
+                <span class="apart-card__prop-desc">2 шт.</span>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="apart-card__bottom">
+        <div class="apart-card__convinients">
+            <img src="img/convinient.svg" alt="">
+            <img src="img/convinient2.svg" alt="">
+            <img src="img/convinient3.svg" alt="">
+            <img src="img/convinient4.svg" alt="">
+            <img src="img/convinient5.svg" alt="">
+            <img src="img/convinient6.svg" alt="">
+        </div>
+        <div class="apart-card__nav">
+            <div class="apart-card__price display4">
+                3 750 Р
+            </div>
+            <button class="apart-card__toggle">
+                <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 1.00004L8.92896 8.07111L1.85789 1.00004" stroke="#AEBED6" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+                                <div class="apart-card">
+    <div class="apart-card__top">
+        <div class="apart-card__img">
+            <img src="img/apart4.webp" alt="" >
+        </div>
+        
+        <button class="apart-card__favourite">
+
+        </button>
+    </div>
+
+    <div class="apart-card__content">
+        <a href="catalog-item.html" class="apart-card__title">
+            2-к квартира, 90 кв.м.,
+            улица Заморёнова
+        </a>
+        <div class="apart-card__city body-text2 gray-text">Анапа</div>
+
+        <div class="apart-card__hidden">
+            <div class="apart-card__rating body-text2 gray-text">
+                <img src="img/star.svg" alt="">
+                <span>4.9 (178)</span>
+            </div>
+            <div class="apart-card__props">
+            <div class="apart-card__prop body-text2">
+                <span class="apart-card__prop-title gray-text">Общая площадь</span>
+                <span class="apart-card__prop-desc">90 м2</span>
+            </div>
+            <div class="apart-card__prop body-text2">
+                <span class="apart-card__prop-title gray-text">Количество комнат</span>
+                <span class="apart-card__prop-desc">2 шт.</span>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="apart-card__bottom">
+        <div class="apart-card__convinients">
+            <img src="img/convinient.svg" alt="">
+            <img src="img/convinient2.svg" alt="">
+            <img src="img/convinient3.svg" alt="">
+            <img src="img/convinient4.svg" alt="">
+            <img src="img/convinient5.svg" alt="">
+            <img src="img/convinient6.svg" alt="">
+        </div>
+        <div class="apart-card__nav">
+            <div class="apart-card__price display4">
+                3 750 Р
+            </div>
+            <button class="apart-card__toggle">
+                <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 1.00004L8.92896 8.07111L1.85789 1.00004" stroke="#AEBED6" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+                                <div class="apart-card">
+    <div class="apart-card__top">
+        <div class="apart-card__img">
+            <img src="img/apart.webp" alt="" >
+        </div>
+        
+        <button class="apart-card__favourite">
+
+        </button>
+    </div>
+
+    <div class="apart-card__content">
+        <a href="catalog-item.html" class="apart-card__title">
+            2-к квартира, 90 кв.м.,
+            улица Заморёнова
+        </a>
+        <div class="apart-card__city body-text2 gray-text">Анапа</div>
+
+        <div class="apart-card__hidden">
+            <div class="apart-card__rating body-text2 gray-text">
+                <img src="img/star.svg" alt="">
+                <span>4.9 (178)</span>
+            </div>
+            <div class="apart-card__props">
+            <div class="apart-card__prop body-text2">
+                <span class="apart-card__prop-title gray-text">Общая площадь</span>
+                <span class="apart-card__prop-desc">90 м2</span>
+            </div>
+            <div class="apart-card__prop body-text2">
+                <span class="apart-card__prop-title gray-text">Количество комнат</span>
+                <span class="apart-card__prop-desc">2 шт.</span>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="apart-card__bottom">
+        <div class="apart-card__convinients">
+            <img src="img/convinient.svg" alt="">
+            <img src="img/convinient2.svg" alt="">
+            <img src="img/convinient3.svg" alt="">
+            <img src="img/convinient4.svg" alt="">
+            <img src="img/convinient5.svg" alt="">
+            <img src="img/convinient6.svg" alt="">
+        </div>
+        <div class="apart-card__nav">
+            <div class="apart-card__price display4">
+                3 750 Р
+            </div>
+            <button class="apart-card__toggle">
+                <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 1.00004L8.92896 8.07111L1.85789 1.00004" stroke="#AEBED6" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+                                <div class="apart-card">
+    <div class="apart-card__top">
+        <div class="apart-card__img">
+            <img src="img/apart2.webp" alt="" >
+        </div>
+        
+        <div class="apart-card__badges">
+            <span class="apart-card__badge ">
+                Супер хозяин
+            </span>
+        </div>
+        
+        <button class="apart-card__favourite">
+
+        </button>
+    </div>
+
+    <div class="apart-card__content">
+        <a href="catalog-item.html" class="apart-card__title">
+            2-к квартира, 90 кв.м.,
+            улица Заморёнова
+        </a>
+        <div class="apart-card__city body-text2 gray-text">Анапа</div>
+
+        <div class="apart-card__hidden">
+            <div class="apart-card__rating body-text2 gray-text">
+                <img src="img/star.svg" alt="">
+                <span>4.9 (178)</span>
+            </div>
+            <div class="apart-card__props">
+            <div class="apart-card__prop body-text2">
+                <span class="apart-card__prop-title gray-text">Общая площадь</span>
+                <span class="apart-card__prop-desc">90 м2</span>
+            </div>
+            <div class="apart-card__prop body-text2">
+                <span class="apart-card__prop-title gray-text">Количество комнат</span>
+                <span class="apart-card__prop-desc">2 шт.</span>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="apart-card__bottom">
+        <div class="apart-card__convinients">
+            <img src="img/convinient.svg" alt="">
+            <img src="img/convinient2.svg" alt="">
+            <img src="img/convinient3.svg" alt="">
+            <img src="img/convinient4.svg" alt="">
+            <img src="img/convinient5.svg" alt="">
+            <img src="img/convinient6.svg" alt="">
+        </div>
+        <div class="apart-card__nav">
+            <div class="apart-card__price display4">
+                3 750 Р
+            </div>
+            <button class="apart-card__toggle">
+                <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 1.00004L8.92896 8.07111L1.85789 1.00004" stroke="#AEBED6" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+                                <div class="apart-card">
+    <div class="apart-card__top">
+        <div class="apart-card__img">
+            <img src="img/apart3.webp" alt="" >
+        </div>
+        
+        <div class="apart-card__badges">
+            <span class="apart-card__badge badge-purple">
+                Популярный
+            </span>
+        </div>
+        
+        <button class="apart-card__favourite">
+
+        </button>
+    </div>
+
+    <div class="apart-card__content">
+        <a href="catalog-item.html" class="apart-card__title">
+            2-к квартира, 90 кв.м.,
+            улица Заморёнова
+        </a>
+        <div class="apart-card__city body-text2 gray-text">Анапа</div>
+
+        <div class="apart-card__hidden">
+            <div class="apart-card__rating body-text2 gray-text">
+                <img src="img/star.svg" alt="">
+                <span>4.9 (178)</span>
+            </div>
+            <div class="apart-card__props">
+            <div class="apart-card__prop body-text2">
+                <span class="apart-card__prop-title gray-text">Общая площадь</span>
+                <span class="apart-card__prop-desc">90 м2</span>
+            </div>
+            <div class="apart-card__prop body-text2">
+                <span class="apart-card__prop-title gray-text">Количество комнат</span>
+                <span class="apart-card__prop-desc">2 шт.</span>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="apart-card__bottom">
+        <div class="apart-card__convinients">
+            <img src="img/convinient.svg" alt="">
+            <img src="img/convinient2.svg" alt="">
+            <img src="img/convinient3.svg" alt="">
+            <img src="img/convinient4.svg" alt="">
+            <img src="img/convinient5.svg" alt="">
+            <img src="img/convinient6.svg" alt="">
+        </div>
+        <div class="apart-card__nav">
+            <div class="apart-card__price display4">
+                3 750 Р
+            </div>
+            <button class="apart-card__toggle">
+                <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 1.00004L8.92896 8.07111L1.85789 1.00004" stroke="#AEBED6" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+                                <div class="apart-card">
+    <div class="apart-card__top">
+        <div class="apart-card__img">
+            <img src="img/apart4.webp" alt="" >
+        </div>
+        
+        <button class="apart-card__favourite">
+
+        </button>
+    </div>
+
+    <div class="apart-card__content">
+        <a href="catalog-item.html" class="apart-card__title">
+            2-к квартира, 90 кв.м.,
+            улица Заморёнова
+        </a>
+        <div class="apart-card__city body-text2 gray-text">Анапа</div>
+
+        <div class="apart-card__hidden">
+            <div class="apart-card__rating body-text2 gray-text">
+                <img src="img/star.svg" alt="">
+                <span>4.9 (178)</span>
+            </div>
+            <div class="apart-card__props">
+            <div class="apart-card__prop body-text2">
+                <span class="apart-card__prop-title gray-text">Общая площадь</span>
+                <span class="apart-card__prop-desc">90 м2</span>
+            </div>
+            <div class="apart-card__prop body-text2">
+                <span class="apart-card__prop-title gray-text">Количество комнат</span>
+                <span class="apart-card__prop-desc">2 шт.</span>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="apart-card__bottom">
+        <div class="apart-card__convinients">
+            <img src="img/convinient.svg" alt="">
+            <img src="img/convinient2.svg" alt="">
+            <img src="img/convinient3.svg" alt="">
+            <img src="img/convinient4.svg" alt="">
+            <img src="img/convinient5.svg" alt="">
+            <img src="img/convinient6.svg" alt="">
+        </div>
+        <div class="apart-card__nav">
+            <div class="apart-card__price display4">
+                3 750 Р
+            </div>
+            <button class="apart-card__toggle">
+                <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 1.00004L8.92896 8.07111L1.85789 1.00004" stroke="#AEBED6" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+                            </div>
+                        </div>
+                        <div class="catalog__nav">
+                            <button class="catalog__more m-btn m-btn-gray-outline">
+                                Показать больше
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="feedback">
+                <div class="container">
+    <div class="feedback__inner">
+        <div class="feedback__content">
+            <h2 class="feedback__title display2">
+                <span class="accent-text">Отзывы</span>
+                клиентов
+                о нашей работе
+            </h2>
+            <p class="feedback__desc body-text gray-text3">
+                Мы получаем много отзывов о нашей работе от клиентов.
+                Решили поделиться некоторыми из них!
+            </p>
+            <a href="" class="feedback__link m-btn m-btn-primary">
+                Подробнее
+            </a>
+        </div>
+        <div class="feedback__img">
+            <img src="img/feedback.webp" alt="">
+        </div>
+    </div>
+</div>
+
+            </section>
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+    <div class="footer__inner">
+        <a href="index.html" class="footer__logo logo">
+            <img src="img/logo.svg" alt="">
+        </a>
+        <nav class="nav">
+            <a href="" class="nav__item _active">О нас</a>
+            <a href="" class="nav__item">Каталог</a>
+            <a href="" class="nav__item">Сотрудничество</a>
+            <a href="" class="nav__item">Обучение</a>
+        </nav>
+    </div>
+</div>
+
+        </footer>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
