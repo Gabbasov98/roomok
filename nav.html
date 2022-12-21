@@ -75,7 +75,10 @@
 
 
         <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="regModal">
-            Быстрый заказ
+            Войти
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="cvModal">
+            Отправить резюме
         </button>
 
     </div>
@@ -95,22 +98,23 @@
         </div>
         <form action="" class="modal__form">
             <div class="modal__fields">
-                <fieldset class="form-group main__full">
-                    <select id="personInRoom">
-                        <option selected>Россия (+7)</option>
-                        <option>USA (+1)</option>
-                    </select>
-                    <label>Страна \Регион</label>
+                <fieldset class="form-group">
+                    <input required type="tel">
+                    <label>Имя</label>
                 </fieldset>
                 <fieldset class="form-group">
-                    <input type="tel">
-                    <label>Номер телефона</label>
+                    <input required type="tel">
+                    <label>Почта</label>
                 </fieldset>
             </div>
             <div class="modal__hint">
-                Мы позвоним вам или отправим SMS, чтобы подтвердить номер телефона. Применяются стандартные условия вашего тарифа на прием сообщений и передачу данных.
-                <a href="">Политика конфиденциальности</a>
+                Нажимая зарегистрироваться вы соглашаетесь с
+                <a href="">политикой конфиденциальности</a>
             </div>
+            <button class="modal__btn m-btn m-btn-secondary">
+                Зарегистрироваться
+            </button>
+
             <div class="modal__socials">
                 <a href="" class="modal__social m-btn m-btn-gray-outline">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -125,58 +129,29 @@
                     </svg>
                     <span>С помощью  google</span>
                 </a>
-                <a href="" class="modal__social m-btn m-btn-gray-outline">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M17 21.25H7C3.35 21.25 1.25 19.15 1.25 15.5V8.5C1.25 4.85 3.35 2.75 7 2.75H17C20.65 2.75 22.75 4.85 22.75 8.5V15.5C22.75 19.15 20.65 21.25 17 21.25ZM7 4.25C4.14 4.25 2.75 5.64 2.75 8.5V15.5C2.75 18.36 4.14 19.75 7 19.75H17C19.86 19.75 21.25 18.36 21.25 15.5V8.5C21.25 5.64 19.86 4.25 17 4.25H7Z" fill="#292D32"/>
-                        <path d="M11.9998 12.87C11.1598 12.87 10.3098 12.61 9.65978 12.08L6.52978 9.57997C6.20978 9.31997 6.14978 8.84997 6.40978 8.52997C6.66978 8.20997 7.13978 8.14997 7.45978 8.40997L10.5898 10.91C11.3498 11.52 12.6398 11.52 13.3998 10.91L16.5298 8.40997C16.8498 8.14997 17.3298 8.19997 17.5798 8.52997C17.8398 8.84997 17.7898 9.32997 17.4598 9.57997L14.3298 12.08C13.6898 12.61 12.8398 12.87 11.9998 12.87Z" fill="#292D32"/>
-                    </svg>
-                    <span>С помощью  эл. почты</span>
-                </a>
             </div>
         </form>
     </div>
 </div>
 
-<!--    Этот код js вызовет модалку "Спасибо"-->
-<!--    openModal('thankModal')-->
-
-<div class="modal thank-modal" id="thankModal">
+<div class="modal modal-cv" id="cvModal">
     <div class="modal__dialog">
         <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.07108 0.928922C0.582923 1.41708 0.582923 2.20853 1.07108 2.69669L6.37436 7.99997L1.07105 13.3033C0.582898 13.7914 0.582897 14.5829 1.07105 15.0711C1.55921 15.5592 2.35066 15.5592 2.83882 15.0711L8.14213 9.76774L13.4454 15.0711C13.9336 15.5592 14.7251 15.5592 15.2132 15.0711C15.7014 14.5829 15.7014 13.7914 15.2132 13.3033L9.9099 7.99997L15.2132 2.69668C15.7013 2.20853 15.7013 1.41707 15.2132 0.928917C14.725 0.440762 13.9336 0.440763 13.4454 0.928917L8.14213 6.23221L2.83885 0.928922C2.35069 0.440766 1.55923 0.440766 1.07108 0.928922Z" fill="#141B31"/>
             </svg>
         </button>
-
-        <div class="modal__title display3">Thank you!</div>
-        <div class="modal__desc">Your message has been sent.
-            We will get back to your shortly</div>
-        <button class="modal__btn mbtn mbtn-outline" onclick="closeModal()">
-            OK
-        </button>
-    </div>
-</div>
-
-<div class="modal help-modal" id="helpModal">
-    <div class="modal__dialog">
-        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
-            </svg>
-        </button>
-
-        <div class="help-modal__grid">
-            <div class="help-modal__content">
-                <div class="help-modal__title display2"></div>
-                <div class="help-modal__desc body-text">
-<!--                    <p>The department inspects the fertiliser when it lands in destination country. This inspection must take place either in the vessel hold or at a registered Approved Arrangements site . Charges apply for this service.</p>-->
-<!--                    <p>Before applying for an import permit, prospective importers need to ensure that they have arranged for the fertiliser to be unpacked or stored at one or more Approved Arrangement site in each port of discharge if needed. The approved arrangement sites need to be of appropriate classification to receive fertiliser, and need the storage capacity to handle the volume of product being imported.</p>-->
-                </div>
-            </div>
-            <div class="help-modal__img">
-                <img src="img/help.svg" alt="">
-            </div>
+        <div class="modal__title display2">
+            Станьте частью команды
         </div>
+        <form action="" class="modal__form">
+            <fieldset class="form-group">
+                <textarea></textarea>
+            </fieldset>
+            <button class="modal__btn m-btn m-btn-primary">
+                Отправить
+            </button>
+        </form>
     </div>
 </div>
 
