@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!--    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">-->
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Вакансии</title>
@@ -234,6 +234,7 @@
     </div>
 
     <div class="modal" id="regModal">
+    <div class="modal__bg"></div>
     <div class="modal__dialog">
         <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -285,6 +286,7 @@
 </div>
 
 <div class="modal modal-cv" id="cvModal">
+    <div class="modal__bg"></div>
     <div class="modal__dialog">
         <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -305,33 +307,306 @@
     </div>
 </div>
 
-    <div class="test-nav">
-    <button class="test-nav__toggle">
-        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 52 52" style="enable-background:new 0 0 52 52;" xml:space="preserve">
-            <path style="fill:#E7ECED;" d="M50.219,21h-2.797c-0.552-2.375-1.486-4.602-2.739-6.613l1.978-1.978 c0.695-0.695,0.695-1.823,0-2.518l-4.553-4.553c-0.695-0.695-1.823-0.695-2.518,0l-1.978,1.978C35.602,6.064,33.375,5.13,31,4.578 V1.781C31,0.797,30.203,0,29.219,0h-6.439C21.797,0,21,0.797,21,1.781v2.797c-2.375,0.552-4.602,1.486-6.613,2.739L12.41,5.339 c-0.695-0.695-1.823-0.695-2.518,0L5.339,9.892c-0.695,0.695-0.695,1.823,0,2.518l1.978,1.978C6.064,16.398,5.13,18.625,4.578,21 H1.781C0.797,21,0,21.797,0,22.781v6.439C0,30.203,0.797,31,1.781,31h2.797c0.552,2.375,1.486,4.602,2.739,6.613L5.339,39.59 c-0.695,0.696-0.695,1.823,0,2.518l4.553,4.553c0.695,0.695,1.823,0.695,2.518,0l1.978-1.978c2.011,1.252,4.238,2.187,6.613,2.739 v2.797C21,51.203,21.797,52,22.781,52h6.439C30.203,52,31,51.203,31,50.219v-2.797c2.375-0.552,4.602-1.486,6.613-2.739l1.978,1.978 c0.695,0.695,1.823,0.695,2.518,0l4.553-4.553c0.695-0.695,0.695-1.823,0-2.518l-1.978-1.978c1.252-2.01,2.186-4.238,2.739-6.613 h2.797C51.203,31,52,30.203,52,29.219v-6.439C52,21.797,51.203,21,50.219,21z M26,35c-4.971,0-9-4.03-9-9c0-4.971,4.029-9,9-9 s9,4.029,9,9C35,30.97,30.971,35,26,35z"/>
-            <path style="fill:#C7CAC7;" d="M26,13c-7.18,0-13,5.82-13,13s5.82,13,13,13s13-5.82,13-13S33.18,13,26,13z M26,35 c-4.971,0-9-4.03-9-9c0-4.971,4.029-9,9-9s9,4.029,9,9C35,30.97,30.971,35,26,35z"/>
-        </svg>
-    </button>
-    <a href="index.html" class="test-nav__link">Главная</a>
-    <a href="404.html" class="test-nav__link">404</a>
-    <a href="about.html" class="test-nav__link">О нас</a>
-    <a href="vacancies.html" class="test-nav__link">Вакансии</a>
-    <a href="vacancy.html" class="test-nav__link">Вакансия</a>
-    <a href="catalog.html" class="test-nav__link">Каталог</a>
-    <a href="catalog-item.html" class="test-nav__link">Карточка недвижимости</a>
-    <a href="edu.html" class="test-nav__link">Обучение</a>
-    <a href="cooperate.html" class="test-nav__link">Сотрудничество</a>
-    <a href="rent.html" class="test-nav__link">Аренда</a>
-    <a href="profile.html" class="test-nav__link">Личный кабинет</a>
-    <a href="profile-edu.html" class="test-nav__link">Обучение</a>
-    <a href="profile-edu2.html" class="test-nav__link">Обучение2</a>
-    <button class="m-btn m-btn-primary" data-modal="regModal">
-        Войти
-    </button>
-    <button class="m-btn m-btn-primary" data-modal="cvModal">
-        Отправить резюме
-    </button>
+<div class="modal modal-profile" id="passportModal">
+    <div class="modal__bg"></div>
+    <div class="modal__dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.07108 0.928922C0.582923 1.41708 0.582923 2.20853 1.07108 2.69669L6.37436 7.99997L1.07105 13.3033C0.582898 13.7914 0.582897 14.5829 1.07105 15.0711C1.55921 15.5592 2.35066 15.5592 2.83882 15.0711L8.14213 9.76774L13.4454 15.0711C13.9336 15.5592 14.7251 15.5592 15.2132 15.0711C15.7014 14.5829 15.7014 13.7914 15.2132 13.3033L9.9099 7.99997L15.2132 2.69668C15.7013 2.20853 15.7013 1.41707 15.2132 0.928917C14.725 0.440762 13.9336 0.440763 13.4454 0.928917L8.14213 6.23221L2.83885 0.928922C2.35069 0.440766 1.55923 0.440766 1.07108 0.928922Z" fill="#141B31"/>
+            </svg>
+        </button>
+        <div class="modal__title display2">
+            Введите паспортные данные
+        </div>
+        <form action="" class="modal-profile__form">
+            <fieldset class="form-group form-group2">
+                <label>Серия</label>
+                <input type="text">
+            </fieldset>
+            <fieldset class="form-group form-group2">
+                <label>Номер</label>
+                <input type="text">
+            </fieldset>
+            <fieldset class="form-group form-group2 modal-profile__full">
+                <label>Кем выдан</label>
+                <input type="text">
+            </fieldset>
+            <fieldset class="form-group form-group2 modal-profile__full">
+                <label>Место прописки</label>
+                <input type="text">
+            </fieldset>
+            <fieldset class="form-group form-group2 modal-profile__full">
+                <label>Номер телефона</label>
+                <input type="tel">
+            </fieldset>
+            <div class="modal-profile__nav">
+                <button class="modal__btn m-btn m-btn-primary">
+                    Отправить
+                </button>
+            </div>
+        </form>
+    </div>
 </div>
+
+<div class="modal modal-profile" id="codeModal">
+    <div class="modal__bg"></div>
+    <div class="modal__dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.07108 0.928922C0.582923 1.41708 0.582923 2.20853 1.07108 2.69669L6.37436 7.99997L1.07105 13.3033C0.582898 13.7914 0.582897 14.5829 1.07105 15.0711C1.55921 15.5592 2.35066 15.5592 2.83882 15.0711L8.14213 9.76774L13.4454 15.0711C13.9336 15.5592 14.7251 15.5592 15.2132 15.0711C15.7014 14.5829 15.7014 13.7914 15.2132 13.3033L9.9099 7.99997L15.2132 2.69668C15.7013 2.20853 15.7013 1.41707 15.2132 0.928917C14.725 0.440762 13.9336 0.440763 13.4454 0.928917L8.14213 6.23221L2.83885 0.928922C2.35069 0.440766 1.55923 0.440766 1.07108 0.928922Z" fill="#141B31"/>
+            </svg>
+        </button>
+        <div class="modal__title display2">
+            Введите код из СМС
+        </div>
+        <form action="" class="modal-profile__form">
+            <fieldset class="form-group form-group2 modal-profile__full">
+                <label>Серия</label>
+                <input type="text">
+            </fieldset>
+            <div class="modal-profile__nav _center">
+                <button class="modal__btn m-btn m-btn-primary">
+                    Отправить
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal modal-profile" id="docsModal">
+    <div class="modal__bg"></div>
+    <div class="modal__dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.07108 0.928922C0.582923 1.41708 0.582923 2.20853 1.07108 2.69669L6.37436 7.99997L1.07105 13.3033C0.582898 13.7914 0.582897 14.5829 1.07105 15.0711C1.55921 15.5592 2.35066 15.5592 2.83882 15.0711L8.14213 9.76774L13.4454 15.0711C13.9336 15.5592 14.7251 15.5592 15.2132 15.0711C15.7014 14.5829 15.7014 13.7914 15.2132 13.3033L9.9099 7.99997L15.2132 2.69668C15.7013 2.20853 15.7013 1.41707 15.2132 0.928917C14.725 0.440762 13.9336 0.440763 13.4454 0.928917L8.14213 6.23221L2.83885 0.928922C2.35069 0.440766 1.55923 0.440766 1.07108 0.928922Z" fill="#141B31"/>
+            </svg>
+        </button>
+        <div class="modal__title display2">
+            Прикрепите документы подтверждающие право
+            на недвижимость
+        </div>
+        <form action="" class="modal-profile__form">
+            <div class="upload modal-profile__full">
+                <input type="file">
+                <div class="upload__wrap">
+                    <div class="upload__default">
+                        <img src="img/upload.svg" alt="" class="upload__img">
+                        <div class="upload__title">
+                            Перетащите фото сюда
+                        </div>
+                        <button class="upload__btn m-btn m-btn-gray-outline">
+                            Загрузить с устройства
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-profile__nav _center">
+                <button class="modal__btn m-btn m-btn-primary">
+                    Отправить
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal modal-profile" id="docsModal2">
+    <div class="modal__bg"></div>
+    <div class="modal__dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.07108 0.928922C0.582923 1.41708 0.582923 2.20853 1.07108 2.69669L6.37436 7.99997L1.07105 13.3033C0.582898 13.7914 0.582897 14.5829 1.07105 15.0711C1.55921 15.5592 2.35066 15.5592 2.83882 15.0711L8.14213 9.76774L13.4454 15.0711C13.9336 15.5592 14.7251 15.5592 15.2132 15.0711C15.7014 14.5829 15.7014 13.7914 15.2132 13.3033L9.9099 7.99997L15.2132 2.69668C15.7013 2.20853 15.7013 1.41707 15.2132 0.928917C14.725 0.440762 13.9336 0.440763 13.4454 0.928917L8.14213 6.23221L2.83885 0.928922C2.35069 0.440766 1.55923 0.440766 1.07108 0.928922Z" fill="#141B31"/>
+            </svg>
+        </button>
+        <div class="modal__title display2">
+            Улыбнитесь на фото
+        </div>
+        <form action="" class="modal-profile__form">
+            <div class="upload modal-profile__full">
+                <input type="file">
+                <div class="upload__wrap">
+                    <div class="upload__default">
+                        <img src="img/upload.svg" alt="" class="upload__img">
+                        <div class="upload__title">
+                            Перетащите фото <br>
+                            вас с паспортом в руках
+                        </div>
+                        <button class="upload__btn m-btn m-btn-gray-outline">
+                            Загрузить с устройства
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-profile__nav _center">
+                <button class="modal__btn m-btn m-btn-primary">
+                    Отправить
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal modal-profile modal-profile2" id="offerModal">
+    <div class="modal__bg"></div>
+    <div class="modal__dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.07108 0.928922C0.582923 1.41708 0.582923 2.20853 1.07108 2.69669L6.37436 7.99997L1.07105 13.3033C0.582898 13.7914 0.582897 14.5829 1.07105 15.0711C1.55921 15.5592 2.35066 15.5592 2.83882 15.0711L8.14213 9.76774L13.4454 15.0711C13.9336 15.5592 14.7251 15.5592 15.2132 15.0711C15.7014 14.5829 15.7014 13.7914 15.2132 13.3033L9.9099 7.99997L15.2132 2.69668C15.7013 2.20853 15.7013 1.41707 15.2132 0.928917C14.725 0.440762 13.9336 0.440763 13.4454 0.928917L8.14213 6.23221L2.83885 0.928922C2.35069 0.440766 1.55923 0.440766 1.07108 0.928922Z" fill="#141B31"/>
+            </svg>
+        </button>
+        <div class="modal__title display2">
+            Отправить предложение
+            по e-mail и СМС
+        </div>
+        <form action="" class="modal-profile2__form">
+            <div class="modal-profile2__group">
+                <fieldset class="form-group">
+                    <input class="date-input" type="text" value="08.03.2023">
+                    <label>Заезд</label>
+                </fieldset>
+                <fieldset class="form-group">
+                    <input class="date-input" type="text" value="09.03.2023">
+                    <label>Выезд</label>
+                </fieldset>
+                <div class="modal-profile2__text body-text gray-text3">
+                    Там121к16-12, 1(6)
+                </div>
+                <fieldset class="form-group form-group2">
+                    <input type="text" value="1500">
+                </fieldset>
+            </div>
+
+            <div class="modal-profile2__group">
+                <fieldset class="form-group form-group2">
+                    <label>e-mail</label>
+                    <input type="email">
+                </fieldset>
+                <fieldset class="form-group form-group2">
+                    <label>Телефон для отправки СМС</label>
+                    <input type="tel">
+                    <div class="form-group__hint">
+                        Осталось 5 СМС
+                        <button class="accent-text">Купить еще</button>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="modal-profile2__nav">
+                <button class="modal__btn m-btn m-btn-gray">
+                    Очистить корзину
+                </button>
+                <button class="modal__btn m-btn m-btn-gray-outline">
+                    Получить ссылку
+                </button>
+                <button class="modal__btn m-btn m-btn-primary">
+                    Отправить
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal modal-profile modal-profile3" id="spendModal">
+    <div class="modal__bg"></div>
+    <div class="modal__dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.07108 0.928922C0.582923 1.41708 0.582923 2.20853 1.07108 2.69669L6.37436 7.99997L1.07105 13.3033C0.582898 13.7914 0.582897 14.5829 1.07105 15.0711C1.55921 15.5592 2.35066 15.5592 2.83882 15.0711L8.14213 9.76774L13.4454 15.0711C13.9336 15.5592 14.7251 15.5592 15.2132 15.0711C15.7014 14.5829 15.7014 13.7914 15.2132 13.3033L9.9099 7.99997L15.2132 2.69668C15.7013 2.20853 15.7013 1.41707 15.2132 0.928917C14.725 0.440762 13.9336 0.440763 13.4454 0.928917L8.14213 6.23221L2.83885 0.928922C2.35069 0.440766 1.55923 0.440766 1.07108 0.928922Z" fill="#141B31"/>
+            </svg>
+        </button>
+        <div class="modal__title display2">
+            Добавить расходы
+        </div>
+        <form action="" class="modal-profile__form">
+            <fieldset class="form-group form-group2">
+                <label>Дата</label>
+                <input class="date-input" type="text" value="08.03.2023">
+            </fieldset>
+            <fieldset class="form-group form-group2">
+                <label>Сумма</label>
+                <input type="text">
+            </fieldset>
+            <fieldset class="form-group form-group2 modal-profile__full">
+                <label>Статья расхода</label>
+                <select>
+                    <option selected hidden>Показать еще статьи</option>
+                    <option>статьи</option>
+                    <option>статьи 2</option>
+                </select>
+            </fieldset>
+            <fieldset class="form-group form-group2 modal-profile__full">
+                <label>Коментарии</label>
+                <textarea></textarea>
+            </fieldset>
+            <fieldset class="form-group form-group2 modal-profile__full">
+                <label>Квартиры</label>
+                <input class="_search" type="text" placeholder="Поиск по названию">
+            </fieldset>
+            <div class="modal-profile3__checks">
+                <div class="m-check">
+                    <input type="checkbox">
+                    <label>Там121к16-12, 1(6)</label>
+                </div>
+                <div class="m-check">
+                    <input type="checkbox">
+                    <label>Там121к17-34, 3(5)</label>
+                </div>
+                <div class="m-check">
+                    <input type="checkbox">
+                    <label>Там121к17-34Б, 3(5)</label>
+                </div>
+                <div class="m-check">
+                    <input type="checkbox">
+                    <label>Там121к6-60, 6(6)</label>
+                </div>
+                <div class="m-check">
+                    <input type="checkbox">
+                    <label>Там121к8-51, 5(6)</label>
+                </div>
+                <div class="m-check">
+                    <input type="checkbox">
+                    <label>Там121к6-60, 6(6)</label>
+                </div>
+                <div class="m-check">
+                    <input type="checkbox">
+                    <label>Там121к8-51, 5(6)</label>
+                </div>
+            </div>
+            <div class="modal-profile__nav">
+                <button class="modal__btn m-btn m-btn-primary">
+                    Добавить расход
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+    <!--<div class="test-nav">-->
+<!--    <button class="test-nav__toggle">-->
+<!--        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 52 52" style="enable-background:new 0 0 52 52;" xml:space="preserve">-->
+<!--            <path style="fill:#E7ECED;" d="M50.219,21h-2.797c-0.552-2.375-1.486-4.602-2.739-6.613l1.978-1.978 c0.695-0.695,0.695-1.823,0-2.518l-4.553-4.553c-0.695-0.695-1.823-0.695-2.518,0l-1.978,1.978C35.602,6.064,33.375,5.13,31,4.578 V1.781C31,0.797,30.203,0,29.219,0h-6.439C21.797,0,21,0.797,21,1.781v2.797c-2.375,0.552-4.602,1.486-6.613,2.739L12.41,5.339 c-0.695-0.695-1.823-0.695-2.518,0L5.339,9.892c-0.695,0.695-0.695,1.823,0,2.518l1.978,1.978C6.064,16.398,5.13,18.625,4.578,21 H1.781C0.797,21,0,21.797,0,22.781v6.439C0,30.203,0.797,31,1.781,31h2.797c0.552,2.375,1.486,4.602,2.739,6.613L5.339,39.59 c-0.695,0.696-0.695,1.823,0,2.518l4.553,4.553c0.695,0.695,1.823,0.695,2.518,0l1.978-1.978c2.011,1.252,4.238,2.187,6.613,2.739 v2.797C21,51.203,21.797,52,22.781,52h6.439C30.203,52,31,51.203,31,50.219v-2.797c2.375-0.552,4.602-1.486,6.613-2.739l1.978,1.978 c0.695,0.695,1.823,0.695,2.518,0l4.553-4.553c0.695-0.695,0.695-1.823,0-2.518l-1.978-1.978c1.252-2.01,2.186-4.238,2.739-6.613 h2.797C51.203,31,52,30.203,52,29.219v-6.439C52,21.797,51.203,21,50.219,21z M26,35c-4.971,0-9-4.03-9-9c0-4.971,4.029-9,9-9 s9,4.029,9,9C35,30.97,30.971,35,26,35z"/>-->
+<!--            <path style="fill:#C7CAC7;" d="M26,13c-7.18,0-13,5.82-13,13s5.82,13,13,13s13-5.82,13-13S33.18,13,26,13z M26,35 c-4.971,0-9-4.03-9-9c0-4.971,4.029-9,9-9s9,4.029,9,9C35,30.97,30.971,35,26,35z"/>-->
+<!--        </svg>-->
+<!--    </button>-->
+<!--    <a href="index.html" class="test-nav__link">Главная</a>-->
+<!--    <a href="404.html" class="test-nav__link">404</a>-->
+<!--    <a href="about.html" class="test-nav__link">О нас</a>-->
+<!--    <a href="vacancies.html" class="test-nav__link">Вакансии</a>-->
+<!--    <a href="vacancy.html" class="test-nav__link">Вакансия</a>-->
+<!--    <a href="catalog.html" class="test-nav__link">Каталог</a>-->
+<!--    <a href="catalog-item.html" class="test-nav__link">Карточка недвижимости</a>-->
+<!--    <a href="edu.html" class="test-nav__link">Обучение</a>-->
+<!--    <a href="cooperate.html" class="test-nav__link">Сотрудничество</a>-->
+<!--    <a href="rent.html" class="test-nav__link">Аренда</a>-->
+<!--    <a href="profile.html" class="test-nav__link">Личный кабинет</a>-->
+<!--    <a href="profile-edu.html" class="test-nav__link">Обучение</a>-->
+<!--    <a href="profile-edu2.html" class="test-nav__link">Обучение2</a>-->
+<!--    <button class="m-btn m-btn-primary" data-modal="regModal">-->
+<!--        Войти-->
+<!--    </button>-->
+<!--    <button class="m-btn m-btn-primary" data-modal="cvModal">-->
+<!--        Отправить резюме-->
+<!--    </button>-->
+<!--</div>-->
 
 
 <script src="js/libs.min.js"></script>
